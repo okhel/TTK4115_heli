@@ -90,8 +90,8 @@ function plotResults()
     plot(t, p1, 'LineWidth', 3, 'Color', colors{1});
     plot(t, p2, 'LineWidth', 3, 'Color', colors{2});
     plot(t, p3, 'LineWidth', 3, 'Color', colors{3});
-    plot(t4, p4, 'LineWidth', 2);
-    legend('\lambda_1 = -1 + 5i, \lambda_2 = -1 - 5i', '\lambda_1 = -5 + 5i, \lambda_2 = -5 - 5i', '\lambda_1 = -5 + i, \lambda_2 = -5 - i', '\lambda_1 = 0, \lambda_2 = -1');
+    % plot(t4, p4, 'LineWidth', 2);
+    legend('\lambda_1, \lambda_2 = -1 \pm 5i', '\lambda_1, \lambda_2 = -5 \pm 5i', '\lambda_1, \lambda_2 = -5 \pm i', '\lambda_1 = 0, \lambda_2 = -1');
 
     disp('Done!');
 end
