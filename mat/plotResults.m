@@ -6,18 +6,18 @@ function plotResults()
     data = struct();
 
     data.crit_damped = struct();
-    data.crit_damped.test1 = load('results/results_(-1,-1).mat');
-    data.crit_damped.test2 = load('results/results_(-2,-2).mat');
-    data.crit_damped.test3 = load('results/results_(-5,-5).mat');
+    data.crit_damped.test1 = load('results/part1/results_(-1,-1).mat');
+    data.crit_damped.test2 = load('results/part1/results_(-2,-2).mat');
+    data.crit_damped.test3 = load('results/part1/results_(-5,-5).mat');
 
     data.over_damped = struct();
-    data.over_damped.test1 = load('results/results_(-5,-1).mat');
+    data.over_damped.test1 = load('results/part1/results_(-5,-1).mat');
 
     data.under_damped = struct();
-    data.under_damped.test1 = load('results/results_(-1+5i,-1-5i).mat');
-    data.under_damped.test2 = load('results/results_(-5+5i,-5-5i).mat');
-    data.under_damped.test3 = load('results/results_(-5+i,-5-i).mat');
-    data.under_damped.test4 = load('results/results_(0,-1).mat');
+    data.under_damped.test1 = load('results/part1/results_(-1+5i,-1-5i).mat');
+    data.under_damped.test2 = load('results/part1/results_(-5+5i,-5-5i).mat');
+    data.under_damped.test3 = load('results/part1/results_(-5+i,-5-i).mat');
+    data.under_damped.test4 = load('results/part1/results_(0,-1).mat');
 
     %% Processing
     t = data.crit_damped.test1.ans(1,:);
